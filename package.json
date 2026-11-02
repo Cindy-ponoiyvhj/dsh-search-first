@@ -1,0 +1,41 @@
+{
+  "name": "dsh-search-first",
+  "version": "0.1.0",
+  "description": "Look before you build: injects a search-first rule into the system prompt and can block hands-on tool calls until the agent has actually searched for prior art.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "search-first",
+    "research",
+    "prior-art",
+    "guardrail",
+    "web-search",
+    "agent-discipline"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phant0Meow/dsh-search-first.git"
+  }
+}

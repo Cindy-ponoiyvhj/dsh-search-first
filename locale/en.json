@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Search First",
+    "description": "Adds a look-it-up-before-you-build rule to the system prompt, and can hold back write, edit and shell calls until the agent has searched for existing work."
+  }
+}

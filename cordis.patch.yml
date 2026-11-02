@@ -1,0 +1,13 @@
+# dsh-search-first bundle patch (Host only).
+# One row: the plugin adds the "search first" rule to the system prompt and,
+# when strict is on, refuses hands-on tool calls until a search has run.
+- insert:
+    - id: search-first
+      name: 'dsh-search-first'
+      config:
+        # Master switch. false removes both the rule and the guard.
+        enabled: true
+        # Where the rule sits among system-prompt sections (meow-memory uses 130).
+        order: 130
+        # true: deny write/edit/ops_bash/... until this turn has used a search tool.
+        strict: false
