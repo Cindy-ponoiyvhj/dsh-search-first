@@ -1,6 +1,6 @@
 {
   "name": "dsh-search-first",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Look before you build: injects a search-first rule into the system prompt and can block hands-on tool calls until the agent has actually searched for prior art.",
   "keywords": [
     "deepseek-harness",
